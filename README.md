@@ -1,2 +1,2 @@
-# template-one
+# Axit-template
 template from Axit
