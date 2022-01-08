@@ -143,7 +143,7 @@
   margin-top:40px ;
 }
 .Features .nav-link{
-  margin: 0px 25px 0px 0px;
+  margin: 0px 40px 0px 0px;
   border-radius: 0px;
   border: 0;
   border-bottom: 1px solid #fff;
@@ -226,7 +226,6 @@
   }
 .about-paragraph{
   color: #919191;
-  margin-top: -40px;
 }
 .title-about-paragraph{
   padding: 20px 0px;
