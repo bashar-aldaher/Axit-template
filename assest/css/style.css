@@ -1,0 +1,541 @@
+@font-face {
+  font-family:'OpenSans' ;
+  src: url("/assest/Fonts/OpenSans/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url('/assest/Fonts/Raleway/Raleway-VariableFont_wght.ttf');
+}
+*{
+  font-family: 'OpenSans';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Navbar  */
+.navbar{
+  background-color: black;
+}
+.navbar img{
+  max-width: 60px;
+}
+.navbar button{
+  color: #fff;
+}
+.nav-link{
+  color: #fff;
+  margin-left: 25px;
+}
+.nav-link:hover{
+  color: #ff9b51;
+}
+/* end navbar  */
+
+/* hero  */
+.hero{
+  background: url("../img/im1.jpg") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  position: relative;
+  padding: 100px 0;
+}
+.hero img{
+  max-width: 100px;
+  padding: 20px 0;
+}
+.hero .row{
+  align-items: center;
+  justify-content: center;
+  flex: auto;
+}
+.hero h4{
+  margin-top: 20px;
+  padding-bottom: 60px;
+  position: relative;
+  font-family: 'Raleway';
+  font-size: 36px;
+}
+.hero h4::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #fff;
+    bottom: 0;
+    margin:20px 0px;
+}
+.hero p{
+  font-family: 'Raleway';
+  font-weight: lighter;
+  font-size: 15px;
+  color: #cccccc;
+}
+.hero .card{
+  border: none;
+  border-radius: 1px;
+  padding:0;
+  margin: 0;
+  text-align: center;
+  color: black;
+}
+.btn.btn-outline-light{
+  border-radius: 0;
+  padding: 5px 20px;
+  margin: 15px 0;
+}
+.card-header span{
+  color: #ff9b51;
+}
+.form-control{
+  margin: 20px 0px;
+  border: none;
+  border-bottom: 2px solid #cccccc;
+}
+.card-footer{
+  color: #fff;
+  background-color:#ff9b51;
+}
+/* end hero  */
+
+/* social media  */
+.Social_Media{
+  border-bottom: 2px solid #bdbdbd;
+  color: #919191;
+  padding: 20px 0px;
+}
+.Social_Media div{
+  align-items: center;
+}
+.Social_Media a{
+  color: #cccccc;
+  font-size: 30px;
+}
+.Social_Media a:hover{
+  color: blue;
+}
+.Social_Media h5{
+  color: black;
+  font-weight: bold
+}
+.icon{
+  text-align: center;
+}
+/* end social media  */
+
+/* tabs  */
+.Features{
+  background-color: #f5f5f5;
+  align-items: center;
+  padding: 40px 0px;
+}
+.Features h4{
+  padding-bottom: 40px;
+  font-weight: bold;
+}
+.Features .btn{
+  background-color: #ff9b51;
+  color: #fff;
+  border-radius: 2px;
+  margin-top:40px ;
+}
+.Features .nav-link{
+  margin: 0px 25px 0px 0px;
+  border-radius: 0px;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  padding: 40px;
+  color: #fff;
+  background-color: #333333;
+}
+.Features .h-link{
+  margin: 0px 1px;
+  padding: 10px 20px;
+}
+.Features .h-link.active{
+  background-color: #ff9b51;
+}
+.Features button.active{
+  background-color: #ff9b51;
+}
+.Features .img{
+  text-align:end ;
+}
+.tab-con{
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
+  
+}
+.tab-pane{
+  padding: 10px 0px 10px 0px;
+
+}
+.Features p{
+  color: #919191;
+}
+.Horizontal-tabs{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px 0px;
+}
+/* End Features  */
+
+/* About  */
+.About{
+  background-color: #fff;
+  padding: 80px 0px;
+}
+.about-item h2{
+    margin-top: 20px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    position: relative;
+  }
+.about-item h2::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 75px;
+    height: 3px;
+    background: #ff9b51;
+    bottom: 0;
+  }
+  .media{
+    padding: 20px 0px;
+    text-align: center;
+    display: block;
+  }
+  .media .bx{
+    color: #ff9b51;
+    font-size: 26px;
+    padding: 10px;
+    margin: 0px 0px 10px 0px;
+    border-radius: 50%;
+    border: 2px solid #ff9b51;
+  }
+  .media-body{
+    padding: 0px 20px;
+  }
+  .media-title{
+    font-weight: 600;
+  }
+.about-paragraph{
+  color: #919191;
+  margin-top: -40px;
+}
+.title-about-paragraph{
+  padding: 20px 0px;
+  color: #333333;
+}
+.next{
+  background-color: #f5f5f5;
+  padding: 80px 0px;
+}
+.about-item{
+  align-items: center;
+}
+/* End About  */
+
+
+    /*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services{
+  background-color: #fff;
+  text-align: center;
+  padding: 40px 0px;
+}
+.services-title{
+  font-family: 'Raleway';
+  font-weight: normal;
+}
+.about-title h2{
+  padding-bottom: 20px;
+  position: relative;
+}
+.about-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: #ff9b51;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+.services .icon-box {
+    padding: 70px 20px 80px 20px;
+  }
+  .services .icon-box .icon {
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.3s;
+    position: relative;
+    color: #ff9b51;
+    border:2px solid #ff9b51;
+    border-radius: 50px;
+    font-size: 32px;
+  }
+  .services .icon-box h4{
+    font-weight: 700;
+    padding: 20px 0px 10px 0px;
+  }
+  .services a {
+    color: black;
+    text-decoration: none;
+  }
+  .services .icon-box p{
+    color: #cccccc;
+  }
+  .services .icon-box:hover {
+    box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
+  }
+  .services .iconbox-orange:hover .icon {
+    background: #ff9b51;
+  }
+  .services .iconbox-orange:hover .icon i {
+    color: #fff;
+  }
+  /* End services  */
+
+  /* pricing  */
+  .pricing{
+    background-color: #f5f5f5;
+    padding: 80px 0px;
+    text-align: center;
+    align-items: center;
+  }
+  .pricing-title h2{
+    font-family: 'Raleway';
+  font-weight: normal;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  .pricing-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #ff9b51;
+    bottom: 0;
+    left: calc(50% - 25px);
+  }
+  .pricing-title p{
+    color: #919191;
+  }
+  .pricing-info{
+    align-items: end;
+    justify-content: center;
+  }
+  .card-header{
+    font-weight: 700;
+    border-radius: 0px;
+    padding: 0px 0px 10px 0px;
+    margin: 10px 0px;
+  }
+  .pricing .card-body h1{
+    font-family: 'Raleway';
+    font-size: 64px;
+    padding-bottom: 10px;
+    font-weight: bold;
+  }
+  .pricing .card-body h5{
+    font-family: 'Raleway';
+    font-size: 16px;
+    color: #cccccc;
+    font-weight: lighter;
+    font-style: italic;
+  }
+  .pricing .card{
+    background-color: #2a2a2a;
+    color: #fff;
+    border: none;
+    margin: 10px 15px;
+  }
+  .pricing .card-header{
+    border: none;
+    border-bottom: 1px solid #fff;
+  }
+  .kind{
+    background-color: #ff8b38;
+    font-weight: bold;
+    padding: 3px 0px;
+  }
+  .list-group-item{
+    color: #cccccc;
+  }
+  /* End pricing  */
+  
+   /*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+.testimonials{
+  text-align: center;
+  padding: 40px 0px;
+}
+.testimonials-title{
+  font-family: 'Raleway';
+  font-weight: normal;
+}
+  .testimonials .testimonial-item .testimonial-img {
+    width: 70px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;    
+  }
+  .testimonials .testimonial-item{
+    padding: 20px;
+  }
+  .testimonial-paragraph{
+    border-radius: 6px;
+    font-style: italic;
+    color: #cccccc;
+    position: relative;
+    max-width: 600px;
+    height: auto;
+    margin: 25px 0px;
+    padding: 30px;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+  }
+  .testimonial-paragraph::after{
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    top: 100%;
+    left: 10%;
+    margin-top: -18px;
+    content: '';
+    background-color: #f5f5f5;
+    transform: rotate(45deg);
+  }
+  .testimonial-paragraph-content{
+    padding: 0px 10px;
+  }
+  .testimonial-info{
+    padding: 5px 20px;
+    text-align: start;
+  }
+  .testimonial-info h3{
+    font-weight: 900;
+    font-size: 20px;
+  }
+  .testimonial-info h6{
+    color: #333333;
+    font-weight: lighter;
+  }
+  /* End Testimonials  */
+
+  /* stylsh  */
+  .stylsh{
+    width: 100%;
+    padding: 40px 0px;
+    background: url("../img/im5.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+  }
+  .stylsh-title h2{
+    font-family: 'Raleway';
+    font-weight: normal;
+    font-size: 40px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  .stylsh-title h2::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #fff;
+    bottom: 0;
+    margin-top: 20px;
+    left: calc(50% - 25px);
+  }
+  .stylsh p{
+    padding: 20px 0px;
+    color: #f5f5f5;
+  }
+  .stylsh .btn{
+    border-radius: 0px;
+    margin-bottom: 20px;
+  }
+  /* End stylsh  */
+
+  /* Contact */
+  .Contact{
+    text-align: center;
+  }
+  .section-title h2{
+    font-family: 'Raleway';
+    font-weight: normal;
+    font-size: 40px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  .section-title h2::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #ff9b51;
+    bottom: 0;
+    margin-top: 20px;
+    left: calc(50% - 25px);
+  }
+  .section-title p{
+    color:#cccccc;
+  }
+  .contact-field{
+    align-items: end;
+  }
+
+  /* Footer  */
+  footer{
+    background-color: black;
+    font-size: small;
+    color: #cccccc;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    padding: 4px 0px;
+  }
+  footer .social a i.bx{
+    font-size: 26px;
+    padding: 10px 15px;
+      color: #cccccc;
+      font-size: 30px;
+      }
+      footer a:hover i.bx{
+        color: blue;
+      }
+  @media (min-width:300px) and (max-width:400px){
+    footer .social .bx{
+      font-size: 13px;
+    padding: 10px 10px;
+    }
+  }
+  footer .a-arrow{
+    position: absolute;
+    padding: 20px;
+  }
+  footer .arrow{
+      color: orange;
+  }
+  /* End Footer  */
